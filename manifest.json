@@ -1,0 +1,17 @@
+{
+  "name": "La Liga Apps",
+  "short_name": "La Liga Apps",
+  "description": "Aplikasi Informasi La Liga",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0f3460",
+  "theme_color": "#0f3460",
+  "icons": [
+    {
+      "src": "images/logo-laliga.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "gcm_sender_id": "745683224092"
+}
