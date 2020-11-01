@@ -7,10 +7,11 @@ const vapidKeys = {
  
  
 webPush.setVapidDetails(
-   'juanvaleriandelima9@gmail.com',
+   'mailto:juanvaleriand@gmail.com',
    vapidKeys.publicKey,
    vapidKeys.privateKey
 )
+
 const pushSubscription = {
    "endpoint": "https://fcm.googleapis.com/fcm/send/f8dhX7-WFL8:APA91bH71UkzmSSlf2F-iPxKFfFv3G59-xRa67FQci4BH2EfqourfdQs3P0bJp0RPJNwaUGNzuZkeprrR-avv0ANwaq_yjFYYHWzSbJnDc2lXnq8fl8oMAdfwDo8a-Qjn9QrXk1bwIaJ",
    "keys": {

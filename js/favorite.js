@@ -1,8 +1,7 @@
 
 import Database from './db.js';
 
-let db = new Database();
-
+const db = new Database();
 const favorite = (id, data) => {
     $(document).ready(() => {
         $(`#click_favorite_${id}`).click(() => {
@@ -16,6 +15,7 @@ const favorite = (id, data) => {
                 setTimeout(() =>  {
                     $(`#add_start_${id}`).removeClass('fa-heart')
                     $(`#add_start_${id}`).addClass('fa-heart-o')
+                    document.getElementById("favorites").click()
                 }, 15)
             } else {
                 db.saveFavoriteTeam(data);

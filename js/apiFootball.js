@@ -168,6 +168,13 @@ class Teams extends ApiFootball {
                                 <img src="${urlImage}" alt="${data.name}" class="responsive-img" style="margin: 10px;">
                             </div>
                             <div class="card-stacked">
+                                <div class="col s5" style="margin-top: 5px;">
+                                    <div class="click active active-2 active-3" id="click_favorite_${data.id}">
+                                        <span class="fa fa-heart" id="add_start_${data.id}"></span>
+                                        <div class="ring"></div>
+                                        <div class="ring2"></div>
+                                    </div>
+                                </div>
                                 <div class="card-content">
                                     <span class="card-title" style="color: black;"><strong>${data.name}</strong></span>
                                     <p>
@@ -181,6 +188,7 @@ class Teams extends ApiFootball {
                         </div>
                     </div>
                 `;
+                favorite(data.id);
             });
         } else {
             teamsHtml.innerHTML = `

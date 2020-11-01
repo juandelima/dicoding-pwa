@@ -23,7 +23,6 @@ h4 {
 .click span {
 	margin-left: 4px;
 	margin-top: 3px;
-	z-index: 999;
 	position: absolute;
 }
 

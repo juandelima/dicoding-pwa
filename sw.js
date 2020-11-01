@@ -10,6 +10,8 @@ const urlsToCache = [
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
     "/css/materialize.min.css",
     "/js/nav.js",
+    "/js/idb.js",
+    "/js/db.js",
     "/js/materialize.min.js",
     "/js/apiFootball.js",
     "/js/favorite.js",
