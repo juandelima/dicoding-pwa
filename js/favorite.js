@@ -6,6 +6,7 @@ const favorite = (id, data) => {
     $(document).ready(() => {
         $(`#click_favorite_${id}`).click(() => {
             if ($(`#add_start_${id}`).hasClass("fa-heart")) {
+                    const page = window.location.hash.substr(1);
                     db.removeFavTeam(id);
                     $(`#click_favorite_${id}`).removeClass('active')
                 setTimeout(() =>  {
@@ -15,7 +16,9 @@ const favorite = (id, data) => {
                 setTimeout(() =>  {
                     $(`#add_start_${id}`).removeClass('fa-heart')
                     $(`#add_start_${id}`).addClass('fa-heart-o')
-                    document.getElementById("favorites").click()
+                    if(page !== 'home' && page !=='') {
+                        document.getElementById("favorites").click()
+                    }
                 }, 15)
             } else {
                 db.saveFavoriteTeam(data);
