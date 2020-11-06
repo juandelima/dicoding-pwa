@@ -19,11 +19,11 @@ export default class Navigation {
           if(this.readyState == 4) {
               if(this.status != 200) return;
 
-              document.querySelectorAll(".topnav, .sidenav").forEach(function(elm) {
+              document.querySelectorAll(".topnav, .sidenav").forEach(elm => {
                   elm.innerHTML = xhttp.responseText;
               });
 
-              document.querySelectorAll(".sidenav a, .topnav a").forEach((elm) => {
+              document.querySelectorAll(".sidenav a, .topnav a").forEach(elm => {
                   elm.addEventListener("click", (event) => {
                       const teams = new Teams();
                       const standings = new Standings();
