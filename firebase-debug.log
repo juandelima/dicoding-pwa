@@ -1,0 +1,85 @@
+[debug] [2020-11-06T12:09:20.365Z] ----------------------------------------------------------------------
+[debug] [2020-11-06T12:09:20.370Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ACER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-11-06T12:09:20.370Z] CLI Version:   8.15.1
+[debug] [2020-11-06T12:09:20.371Z] Platform:      win32
+[debug] [2020-11-06T12:09:20.371Z] Node Version:  v12.16.1
+[debug] [2020-11-06T12:09:20.393Z] Time:          Fri Nov 06 2020 19:09:20 GMT+0700 (GMT+07:00)
+[debug] [2020-11-06T12:09:20.393Z] ----------------------------------------------------------------------
+[debug] [2020-11-06T12:09:20.394Z] 
+[debug] [2020-11-06T12:09:20.415Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-06T12:09:20.416Z] > authorizing via signed-in user
+[debug] [2020-11-06T12:09:20.417Z] [iam] checking project pwa-la-liga for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-11-06T12:09:20.426Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-11-06T12:09:20.427Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-11-06T12:09:22.251Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Fri, 06 Nov 2020 12:09:24 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-06T12:09:22.263Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/pwa-la-liga:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-11-06T12:09:34.297Z] [iam] error while checking permissions, command may fail: FirebaseError: Server Error. getaddrinfo ENOTFOUND cloudresourcemanager.googleapis.com
+[debug] [2020-11-06T12:09:34.302Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/pwa-la-liga  
+ 
+[debug] [2020-11-06T12:09:34.791Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 06 Nov 2020 12:09:37 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'pwa-la-liga'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-11-06T12:09:34.805Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/pwa-la-liga/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-11-06T12:09:47.000Z] Error: getaddrinfo ENOTFOUND firebasehosting.googleapis.com
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:64:26)
+[error] 
+[error] Error: Server Error. getaddrinfo ENOTFOUND firebasehosting.googleapis.com
+[debug] [2020-11-06T12:09:59.225Z] ----------------------------------------------------------------------
+[debug] [2020-11-06T12:09:59.229Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ACER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-11-06T12:09:59.230Z] CLI Version:   8.15.1
+[debug] [2020-11-06T12:09:59.230Z] Platform:      win32
+[debug] [2020-11-06T12:09:59.230Z] Node Version:  v12.16.1
+[debug] [2020-11-06T12:09:59.232Z] Time:          Fri Nov 06 2020 19:09:59 GMT+0700 (GMT+07:00)
+[debug] [2020-11-06T12:09:59.232Z] ----------------------------------------------------------------------
+[debug] [2020-11-06T12:09:59.232Z] 
+[debug] [2020-11-06T12:09:59.251Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-06T12:09:59.252Z] > authorizing via signed-in user
+[debug] [2020-11-06T12:09:59.252Z] [iam] checking project pwa-la-liga for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-11-06T12:09:59.259Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/pwa-la-liga:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-11-06T12:10:09.895Z] [iam] error while checking permissions, command may fail: FirebaseError: Server Error. getaddrinfo EAI_AGAIN cloudresourcemanager.googleapis.com
+[debug] [2020-11-06T12:10:09.898Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/pwa-la-liga  
+ 
+[debug] [2020-11-06T12:10:10.263Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 06 Nov 2020 12:10:12 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'pwa-la-liga'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-11-06T12:10:10.277Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/pwa-la-liga/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-11-06T12:10:23.498Z] Error: getaddrinfo ENOTFOUND firebasehosting.googleapis.com
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:64:26)
+[error] 
+[error] Error: Server Error. getaddrinfo ENOTFOUND firebasehosting.googleapis.com
+[debug] [2020-11-06T12:11:14.430Z] ----------------------------------------------------------------------
+[debug] [2020-11-06T12:11:14.435Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ACER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-11-06T12:11:14.435Z] CLI Version:   8.15.1
+[debug] [2020-11-06T12:11:14.435Z] Platform:      win32
+[debug] [2020-11-06T12:11:14.436Z] Node Version:  v12.16.1
+[debug] [2020-11-06T12:11:14.437Z] Time:          Fri Nov 06 2020 19:11:14 GMT+0700 (GMT+07:00)
+[debug] [2020-11-06T12:11:14.437Z] ----------------------------------------------------------------------
+[debug] [2020-11-06T12:11:14.438Z] 
+[debug] [2020-11-06T12:11:14.456Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-06T12:11:14.457Z] > authorizing via signed-in user
+[debug] [2020-11-06T12:11:14.458Z] [iam] checking project pwa-la-liga for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-11-06T12:11:14.464Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/pwa-la-liga:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-11-06T12:11:26.235Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 06 Nov 2020 12:11:28 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1001","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-06T12:11:26.242Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/pwa-la-liga  
+ 
+[debug] [2020-11-06T12:11:26.698Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 06 Nov 2020 12:11:29 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'pwa-la-liga'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-11-06T12:11:26.713Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/pwa-la-liga/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-11-06T12:11:38.912Z] Error: getaddrinfo ENOTFOUND firebasehosting.googleapis.com
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:64:26)
+[error] 
+[error] Error: Server Error. getaddrinfo ENOTFOUND firebasehosting.googleapis.com
